@@ -24,7 +24,7 @@ include:
   - board: nice_nano_v2
     shield: levels_right
   - board: seeeduino_xiao_ble
-    shield: levels_dongle prospector_adapter
+    shield: levels_dongle dongle_screen
   - board: nice_nano_v2
     shield: settings_reset
   - board: seeeduino_xiao_ble
