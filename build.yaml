@@ -21,8 +21,12 @@
 include:
   - board: nice_nano_v2
     shield: levels_left
+    zmk-extra-modules:
+      - zmk-pmw3610-driver
   - board: nice_nano_v2
     shield: levels_right
+    zmk-extra-modules:
+      - zmk-pmw3610-driver
   - board: seeeduino_xiao_ble
     shield: levels_dongle dongle_screen
   - board: nice_nano_v2
