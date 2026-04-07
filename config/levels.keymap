@@ -135,7 +135,7 @@
         compatible = "zmk,keymap";
 
         base {
-            display-name = "Base";
+            display-name = "<3 Wife";
             bindings = <
 &none  &mkp MB4         &mkp RCLK        &mkp MCLK     &mkp LCLK          &mkp MB5     &mkp MB4         &mkp LCLK           &mkp MCLK     &mkp RCLK    &mkp MB5          &kp C_VOLUME_UP
 &mo 8  &kp Q            &kp W            &kp F         &kp P              &kp B        &kp J            &kp L               &kp U         &kp Y        &kp SQT           &kp C_VOL_DN
@@ -229,7 +229,7 @@
             bindings = <
 &out OUT_TOG  &trans      &trans      &trans      &trans  &trans    &trans  &trans  &trans  &trans  &trans  &trans
 &trans        &bt BT_PRV  &bt BT_NXT  &bt BT_CLR  &trans  &trans    &trans  &trans  &trans  &trans  &trans  &trans
-&trans        &trans      &trans      &trans      &trans  &trans    &trans  &trans  &trans  &trans  &trans  &trans
+&out OUT_TOG  &trans      &trans      &trans      &trans  &trans    &trans  &trans  &trans  &trans  &trans  &trans
 &trans        &trans      &trans      &trans      &trans  &trans    &trans  &trans  &trans  &trans  &trans  &trans
                                       &trans      &trans  &trans    &trans  &trans  &trans
             >;
