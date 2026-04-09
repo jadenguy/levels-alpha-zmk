@@ -109,7 +109,7 @@
     compatible = "zmk,input-listener";
     status = "disabled";
     device = <&trackball_split>;
-    input-processors = <&zip_xy_scaler 1 3>;
+    input-processors = <&zip_xy_scaler 1 1>;
 
     slowMouse {
       layers = <2>;
@@ -122,11 +122,11 @@
     compatible = "zmk,input-listener";
     status = "disabled";
     device = <&trackball_split2>;
-    input-processors = <&zip_xy_scaler 1 16>, <&zip_xy_to_scroll_mapper>;
+    input-processors = <&zip_scroll_scaler 1 1>, <&zip_xy_to_scroll_mapper>;
   
     slowScroll {
       layers = <2>;
-      input-processors = <&zip_xy_scaler 1 12>, <&zip_xy_to_scroll_mapper>;
+      input-processors = <&zip_scroll_scaler 1 4>;
       process-next;
     };
   };

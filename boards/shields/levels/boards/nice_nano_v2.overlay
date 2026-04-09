@@ -43,6 +43,7 @@
     reg = <0>;
     spi-max-frequency = <2000000>;
     irq-gpios = <&gpio0 24 (GPIO_ACTIVE_LOW | GPIO_PULL_UP)>;
+    // left
     cpi = <2400>;
     swap-xy;
     invert-x;
@@ -58,7 +59,8 @@
     reg = <0>;
     spi-max-frequency = <2000000>;
     irq-gpios = <&gpio0 24 (GPIO_ACTIVE_LOW | GPIO_PULL_UP)>;
-    cpi = <800>;
+    // right
+    cpi = <2400>;
     swap-xy;
     invert-x;
     invert-y;
