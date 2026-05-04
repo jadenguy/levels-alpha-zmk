@@ -19,17 +19,17 @@
 #
 ---
 include:
-  - board: nice_nano_v2
+  - board: nice_nano@2.0.0//zmk
     shield: levels_left
     zmk-extra-modules:
       - zmk-pmw3610-driver
-  - board: nice_nano_v2
+  - board: nice_nano@2.0.0//zmk
     shield: levels_right
     zmk-extra-modules:
       - zmk-pmw3610-driver
-  - board: seeeduino_xiao_ble
+  - board: xiao_ble//zmk
     shield: levels_dongle dongle_screen
-  - board: nice_nano_v2
+  - board: nice_nano@2.0.0//zmk
     shield: settings_reset
-  - board: seeeduino_xiao_ble
+  - board: xiao_ble//zmk
     shield: settings_reset
