@@ -11,7 +11,7 @@ jobs:
     name: Package firmware with commit info
     steps:
     - name: Checkout
-      uses: actions/checkout@v4
+      uses: actions/checkout@v6
       
     - name: Create commit info file
       run: |
@@ -37,7 +37,7 @@ jobs:
         cat commit_info.txt
     
     - name: Download firmware artifacts
-      uses: actions/download-artifact@v4
+      uses: actions/download-artifact@v6
       with:
         path: firmware-artifacts
     
@@ -72,7 +72,7 @@ jobs:
         ls -la firmware-package/
     
     - name: Upload complete firmware package
-      uses: actions/upload-artifact@v4
+      uses: actions/upload-artifact@v6
       with:
         name: levels54-firmware-package
         path: firmware-package/
