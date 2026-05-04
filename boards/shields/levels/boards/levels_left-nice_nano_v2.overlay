@@ -1,7 +1,5 @@
 // vim: set ft=dts:
-
 #include <dt-bindings/zmk/input_transform.h>
-
 &pinctrl {
     spi0_default: spi0_default {
         group1 {
@@ -12,7 +10,6 @@
               ;
         };
     };
-
     spi0_sleep: spi0_sleep {
         group1 {
             psels 
@@ -24,7 +21,6 @@
         };
     };
 };
-
 &spi0 {
   status = "disabled";
   compatible = "nordic,nrf-spim";
@@ -32,34 +28,15 @@
   pinctrl-1 = <&spi0_sleep>;
   pinctrl-names = "default", "sleep";
 };
-
 &spi0 {
   status = "okay";
   cs-gpios = <&gpio0 22 GPIO_ACTIVE_LOW>;
-
-  trackball: trackball@0 {
-    status = "okay";
-    compatible = "pixart,pmw3610-alt";
-    reg = <0>;
-    spi-max-frequency = <2000000>;
-    irq-gpios = <&gpio0 24 (GPIO_ACTIVE_LOW | GPIO_PULL_UP)>;
-    // right
-    cpi = <2400>;
-    swap-xy;
-    invert-x;
-    invert-y;
-    evt-type = <INPUT_EV_REL>;
-    x-input-code = <INPUT_REL_X>;
-    y-input-code = <INPUT_REL_Y>;
-  };
-
   trackball2: trackball2@0 {
     status = "okay";
     compatible = "pixart,pmw3610-alt";
     reg = <0>;
     spi-max-frequency = <2000000>;
     irq-gpios = <&gpio0 24 (GPIO_ACTIVE_LOW | GPIO_PULL_UP)>;
-    // left
     cpi = <600>;
     swap-xy;
     invert-x;
