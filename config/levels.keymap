@@ -67,6 +67,11 @@
             bindings = <&bootloader>;
             key-positions = <41 42>;
         };
+
+        UsbOut {
+            bindings = <&out OUT_USB>;
+            key-positions = <0 12>;
+        };
     };
 
     macros {
