@@ -28,7 +28,7 @@ include:
     zmk-extra-modules:
       - zmk-pmw3610-driver
   - board: xiao_ble//zmk
-    shield: levels_dongle dongle_screen
+    shield: levels_dongle # dongle_screen
   - board: nice_nano@2.0.0//zmk
     shield: settings_reset
   - board: xiao_ble//zmk
